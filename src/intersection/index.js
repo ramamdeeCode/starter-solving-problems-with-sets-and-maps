@@ -5,11 +5,13 @@ function intersection(a, b) {
   for (let e of a) {
     map.set(e);
   }
+
   for (let e of b) {
     if (map.has(e)) {
       set.add(e);
     }
   }
+
   return [...set];
 }
 
